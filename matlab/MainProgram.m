@@ -42,7 +42,7 @@ disp('Analysis in progress...');
 
 Deadload = 1;       % Define coefficient for dead load
 
-[Link,X0,Type,Bound,Clusters,k,A,Young,Gamma,L0,S0,Fe,I,Curve0,Bending]= feval(str2func('Input1'));    % reading input file
+[Link,X0,Type,Bound,Clusters,k,A,Young,Gamma,L0,S0,Fe,I,Curve0,Bending]= feval(str2func('Input1_ULS'));    % reading input file
 Linit=L0;                                                                                             % storing initial link lenghts
 
 % Static analysis by dynamic relaxation
@@ -111,7 +111,7 @@ if(NodeLabel)
     Np = size(X0,1);				
     
     for i=1:Np
-        text(X0(i,1),X0(i,2),X0(i,3),num2str(i),'color','m')		
+        text(X0(i,1),X0(i,2),X0(i,3),num2str(i),'color','m','FontSize',20)		
     end;
 
 end;
@@ -166,7 +166,7 @@ if(NodeLabel)
     Np = size(Xf,1);			
     
     for i=1:Np
-    	text(Xf(i,1),Xf(i,2),Xf(i,3),num2str(i),'color','k','FontName','Times New Roman','FontSize',20)	
+    	%text(Xf(i,1),Xf(i,2),Xf(i,3),num2str(i),'color','k','FontName','Times New Roman','FontSize',20)	
     end;
     
 end;
