@@ -10,24 +10,24 @@ from compas.utilities import i_to_rgb
 
 dva = {
     'is_fixed': False,
-    'x': 0.0,
-    'y': 0.0,
-    'z': 0.0,
-    'px': 0.0,  # x component of point load at vertices
-    'py': 0.0,  # y component of point load at vertices
-    'pz': 0.0,  # z component of point load at vertices
-    'rx': 0.0,
-    'ry': 0.0,
-    'rz': 0.0,
+    'x': 0.0,  # m
+    'y': 0.0,  # m
+    'z': 0.0,  # m
+    'px': 0.0,  # kN
+    'py': 0.0,  # kN
+    'pz': 0.0,  # kN
+    'rx': 0.0,  # kN
+    'ry': 0.0,  # kN
+    'rz': 0.0,  # kN
 }
 
 dea = {
     'qpre': 1.0,  # prescribed force densities
-    'fpre': 0.0,  # prescribed edge forces
-    'lpre': 0.0,  # prescribed edge lengths
-    'linit': 0.0,  # initial edge length
-    'E': 0.0,  # initial edge length
-    'radius': 0.0, # global initial cable radius
+    'fpre': 0.0,  # kN - prescribed edge forces
+    'lpre': 0.0,  # m - prescribed edge lengths
+    'linit': 0.0,  # m - initial edge length
+    'E': 0.0,  # kN/mm2 (GPa) - e moduli
+    'radius': 0.0, # mm -> global initial cable radius
 }
 
 
