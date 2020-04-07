@@ -109,7 +109,7 @@ ENV/
 docs/__build/
 docs/api/generated/
 
-*.3dm
+map_scale.3dm
 *.3dmbak
 *.rhl
 
